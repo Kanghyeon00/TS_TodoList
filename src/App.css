@@ -69,3 +69,11 @@ form .submitButton {
     cursor: pointer;
     color: red;
 }
+
+/* 모바일 CSS */
+
+@media all and (max-width:767px) {
+    body{
+        width: 100%
+    }
+  }
