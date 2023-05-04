@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 시계부분 CSS */
+
+.clockWrap h1 {
+    width: 100%;
+    font-size: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clockWrap p {
+    width: 100%;
+    font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 리스트 부분 CSS */
+
+.inputText {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+    height: 400px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list ul li {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 25px;
+    height: 50px;
+}
+
+form .submitButton {
+    width: 100%;
+    height: 40px;
+}
+
+.inputCheckBox {
+    margin-right: 30px;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.deleteButton {
+    font-size: 20px;
+    margin-right: 30px;
+    background: none;
+    border: none;
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+    color: red;
 }
